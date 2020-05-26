@@ -1,0 +1,6 @@
+file=input("Input the file name(like abc.py): ")
+length=len(file)
+if file[length-2:length]=="py":
+    print("The extension of file is : python")
+else:
+    print("file has another extension")
