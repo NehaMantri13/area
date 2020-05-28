@@ -1,0 +1,20 @@
+# Python3 code to demonstrate 
+# each occurrence frequency using 
+
+# taking input from user
+from collections import Counter
+
+test_str = input("Enter the string : ")
+
+all_freq = {} 
+def most_frequence(mywords):
+    for i in mywords:
+        if i in all_freq:
+            all_freq[i] += 1
+        else:
+            all_freq[i] = 1
+    cnt=Counter(all_freq)
+    print(cnt)
+
+#calling the function
+most_frequence(test_str)
